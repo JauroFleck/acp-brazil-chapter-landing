@@ -2,7 +2,7 @@ export default function FooterCTA() {
   return (
     <section className="py-20 bg-gray-50 text-center">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-serif font-bold text-acp-navy mb-6">
+        <h2 className="text-3xl font-serif font-bold text-acp-primary mb-6">
           Junte-se à Comunidade Global
         </h2>
         <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -12,7 +12,7 @@ export default function FooterCTA() {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="#"
-            className="px-8 py-3 bg-acp-navy text-white font-semibold rounded shadow-lg hover:bg-acp-light transition"
+            className="px-8 py-3 bg-acp-primary text-white font-semibold rounded shadow-lg hover:bg-acp-primaryDark transition"
           >
             Inscrever-se Agora
           </a>

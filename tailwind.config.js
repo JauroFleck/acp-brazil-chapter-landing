@@ -8,11 +8,12 @@ export default {
     extend: {
       colors: {
         acp: {
-          navy: '#0F172A',
-          light: '#1E293B',
-          gold: '#B45309',
-          teal: '#0D9488',
-          silver: '#94A3B8'
+          primary: '#018168',      /* Cor Principal (Deep Teal/Emerald) */
+          primaryDark: '#015c4a',  /* Variação mais escura para hover */
+          secondary: '#9FD067',    /* Cor Secundária (Light Green/Lime) */
+          secondaryDark: '#88b655',/* Variação para hover da secundária */
+          text: '#334155',         /* Cinza chumbo para leitura confortável */
+          bgLight: '#F8FAFC'       /* Fundo muito claro, quase branco */
         }
       },
       fontFamily: {

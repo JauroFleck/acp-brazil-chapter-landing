@@ -18,8 +18,9 @@ export default function LeadershipCarousel() {
     {
       name: 'Dr. Roberto Almeida',
       title: 'FACP',
+      titleClass: 'text-acp-secondaryDark',
       role: 'GOVERNOR',
-      roleBg: 'bg-acp-navy/90',
+      roleBg: 'bg-acp-primary/90',
       description:
         'Governador do Capítulo Brasil. Chefe de Clínica Médica no Hospital das Clínicas. Lidera iniciativas de educação continuada.',
       image:
@@ -28,8 +29,9 @@ export default function LeadershipCarousel() {
     {
       name: 'Dra. Helena Costa',
       title: 'MACP',
+      titleClass: 'text-amber-500',
       role: 'MASTER',
-      roleBg: 'bg-acp-gold/90',
+      roleBg: 'bg-amber-500/90',
       description:
         'Professora Emérita de Medicina. Reconhecida internacionalmente por suas pesquisas em Cardiologia Preventiva.',
       image:
@@ -38,6 +40,7 @@ export default function LeadershipCarousel() {
     {
       name: 'Dr. André Santos',
       title: 'FACP',
+      titleClass: 'text-acp-secondaryDark',
       role: 'TREASURER',
       roleBg: 'bg-gray-200',
       roleText: 'text-gray-700',
@@ -61,14 +64,14 @@ export default function LeadershipCarousel() {
   ];
 
   return (
-    <section id="lideranca" className="py-24 bg-gray-50 overflow-hidden">
+    <section id="lideranca" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-end mb-12">
           <div>
-            <span className="text-acp-teal font-bold text-sm uppercase tracking-widest">
+            <span className="text-acp-primary font-bold text-sm uppercase tracking-widest bg-emerald-50 px-3 py-1 rounded-full text-emerald-800">
               Governança
             </span>
-            <h2 className="mt-2 text-3xl font-serif font-bold text-acp-navy">
+            <h2 className="mt-4 text-3xl font-serif font-bold text-acp-primary">
               Liderança do Capítulo
             </h2>
           </div>
@@ -76,13 +79,13 @@ export default function LeadershipCarousel() {
           <div className="flex gap-2">
             <button
               onClick={() => scrollCarousel('left')}
-              className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-acp-navy hover:text-white transition"
+              className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-acp-primary hover:text-white transition"
             >
               <i className="fa-solid fa-chevron-left"></i>
             </button>
             <button
               onClick={() => scrollCarousel('right')}
-              className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-acp-navy hover:text-white transition"
+              className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-acp-primary hover:text-white transition"
             >
               <i className="fa-solid fa-chevron-right"></i>
             </button>
@@ -92,6 +95,7 @@ export default function LeadershipCarousel() {
         {/* Carousel Track */}
         <div
           ref={carouselRef}
+          id="leadership-carousel"
           className="flex overflow-x-auto scrollbar-hide gap-6 pb-10 snap-x snap-mandatory"
         >
           {leadership.map((person, index) => (
@@ -101,7 +105,7 @@ export default function LeadershipCarousel() {
             >
               <div className="h-64 overflow-hidden rounded-t-lg relative">
                 <div
-                  className={`absolute top-4 left-4 ${person.roleBg} ${person.roleText || 'text-white'} text-[10px] font-bold px-2 py-1 rounded backdrop-blur-sm`}
+                  className={`absolute top-4 left-4 ${person.roleBg} ${person.roleText || 'text-white'} text-[10px] font-bold px-2 py-1 rounded backdrop-blur-sm shadow-sm`}
                 >
                   {person.role}
                 </div>
@@ -112,9 +116,9 @@ export default function LeadershipCarousel() {
                 />
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-serif font-bold text-acp-navy">{person.name}</h4>
+                <h4 className="text-lg font-serif font-bold text-acp-primary">{person.name}</h4>
                 <span
-                  className={`text-xs font-bold ${person.titleClass || 'text-acp-gold'} uppercase tracking-wider mb-2 block`}
+                  className={`text-xs font-bold ${person.titleClass || 'text-acp-secondaryDark'} uppercase tracking-wider mb-2 block`}
                 >
                   {person.title}
                 </span>
@@ -124,7 +128,7 @@ export default function LeadershipCarousel() {
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
                   {person.title !== 'Member' && (
-                    <a href="#" className="text-gray-400 hover:text-acp-navy">
+                    <a href="#" className="text-gray-400 hover:text-acp-primary">
                       <i className="fa-solid fa-graduation-cap"></i>
                     </a>
                   )}

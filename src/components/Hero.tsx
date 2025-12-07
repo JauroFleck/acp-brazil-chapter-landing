@@ -6,7 +6,7 @@ export default function Hero() {
         <img
           src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
           alt="Medical Background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover grayscale opacity-80"
         />
         <div className="absolute inset-0 hero-overlay"></div>
       </div>
@@ -17,23 +17,21 @@ export default function Hero() {
             className="inline-block px-3 py-1 mb-6 border border-white/30 rounded-full bg-white/10 backdrop-blur-sm fade-in-up"
             style={{ animationDelay: '0.1s' }}
           >
-            <span className="text-acp-teal font-semibold text-xs uppercase tracking-wider text-white">
+            <span className="text-acp-secondary font-bold text-xs uppercase tracking-wider">
               American College of Physicians
             </span>
           </div>
 
           <h1
-            className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight fade-in-up"
+            className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight fade-in-up shadow-sm"
             style={{ animationDelay: '0.3s' }}
           >
             Excelência e Liderança na <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-white">
-              Medicina Interna
-            </span>
+            <span className="text-acp-secondary">Medicina Interna</span>
           </h1>
 
           <p
-            className="text-lg md:text-xl text-gray-300 mb-10 font-light leading-relaxed max-w-2xl fade-in-up"
+            className="text-lg md:text-xl text-gray-100 mb-10 font-light leading-relaxed max-w-2xl fade-in-up"
             style={{ animationDelay: '0.5s' }}
           >
             O Capítulo Brasileiro do ACP une médicos internistas em busca de educação contínua de
@@ -46,9 +44,15 @@ export default function Hero() {
           >
             <a
               href="#membership"
-              className="px-8 py-4 bg-white text-acp-navy font-semibold rounded hover:bg-gray-100 transition shadow-xl text-center"
+              className="px-8 py-4 bg-acp-secondary text-acp-primaryDark font-bold rounded hover:bg-white hover:text-acp-primary transition shadow-xl text-center"
             >
               Torne-se Membro
+            </a>
+            <a
+              href="#sobre"
+              className="px-8 py-4 border border-white/40 text-white font-medium rounded hover:bg-white/10 transition backdrop-blur-sm flex items-center justify-center gap-2"
+            >
+              <i className="fa-regular fa-circle-play"></i> Conheça o Capítulo
             </a>
           </div>
         </div>
