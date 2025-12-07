@@ -1,22 +1,18 @@
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import StatsStrip from './components/StatsStrip';
-import MembershipTiers from './components/MembershipTiers';
-import LeadershipCarousel from './components/LeadershipCarousel';
-import ContentSection from './components/ContentSection';
-import FooterCTA from './components/FooterCTA';
+import HeroSection from './components/HeroSection';
+import ExplainerSection from './components/ExplainerSection';
+import DoctorSearchSection from './components/DoctorSearchSection';
+import DoctorsCTA from './components/DoctorsCTA';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Navigation />
-      <Hero />
-      <StatsStrip />
-      <MembershipTiers />
-      <LeadershipCarousel />
-      <ContentSection />
-      <FooterCTA />
+      <HeroSection />
+      <DoctorSearchSection />
+      <ExplainerSection />
+      <DoctorsCTA />
       <Footer />
     </>
   );

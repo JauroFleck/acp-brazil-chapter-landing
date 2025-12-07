@@ -7,18 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        acp: {
-          primary: '#018168',      /* Cor Principal (Deep Teal/Emerald) */
-          primaryDark: '#015c4a',  /* Variação mais escura para hover */
-          secondary: '#9FD067',    /* Cor Secundária (Light Green/Lime) */
-          secondaryDark: '#88b655',/* Variação para hover da secundária */
-          text: '#334155',         /* Cinza chumbo para leitura confortável */
-          bgLight: '#F8FAFC'       /* Fundo muito claro, quase branco */
+        brand: {
+          primary: '#018168',      /* Verde "Teal" Profundo - Confiança e Saúde */
+          primaryDark: '#015f4d',
+          secondary: '#9FD067',    /* Verde Claro - Vitalidade e Acessibilidade */
+          secondaryLight: '#dff5c6',
+          text: '#2d3748',
+          lightBg: '#f0f9f6'       /* Fundo muito suave esverdeado */
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        sans: ['Lato', 'sans-serif'],
+        display: ['Montserrat', 'sans-serif'],
       }
     },
   },
