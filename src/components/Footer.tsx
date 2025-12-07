@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-gray-800 text-xs text-center md:text-left flex flex-col md:flex-row justify-between">
-        <p>&copy; 2023 ACP Brazil Chapter. Todos os direitos reservados.</p>
+        <p>&copy; 2025 ACP Brazil Chapter. Todos os direitos reservados.</p>
         <div className="mt-2 md:mt-0 space-x-4">
           <a href="#" className="hover:text-white">Política de Privacidade</a>
           <a href="#" className="hover:text-white">Termos de Uso</a>
