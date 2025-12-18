@@ -4,9 +4,10 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
-          alt="Médico ouvindo paciente com atenção" 
-          className="w-full h-full object-cover object-center opacity-50"
+          src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          alt="Médico com jaleco branco em consulta" 
+          className="w-full h-full object-cover opacity-50"
+          style={{ objectPosition: 'center 60%' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent"></div>
       </div>
@@ -22,7 +23,7 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-            Não confie sua saúde a qualquer um. Encontre médicos internistas e especialistas comprometidos com o <strong>mais alto padrão de ética e atualização contínua</strong> do American College of Physicians.
+            Não confie sua saúde a qualquer um. Encontre médicos especialistas e sub-especialistas comprometidos com o <strong>mais alto padrão de ética e atualização contínua</strong> do American College of Physicians.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

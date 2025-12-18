@@ -85,7 +85,7 @@ export default function DoctorModal({ doctor, onClose }: DoctorModalProps) {
               rel="noopener noreferrer"
               className="block w-full py-4 bg-brand-secondary text-brand-primaryDark font-bold text-center rounded-lg hover:bg-brand-primary hover:text-white transition shadow-lg flex items-center justify-center gap-2"
             >
-              Agendar Consulta / Contato
+              Contato
             </a>
           </div>
         </div>

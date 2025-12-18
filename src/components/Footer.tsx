@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="col-span-1 md:col-span-2">
           <span className="font-display font-bold text-2xl text-white block mb-4">ACP Brasil</span>
           <p className="text-sm mb-4 max-w-sm">
-            Conectando pacientes aos melhores médicos internistas do país. O American College of Physicians é a maior sociedade de especialidade médica do mundo.
+            Conectando pacientes aos melhores médicos internistas do país. O American College of Physicians é a maior sociedade de medicina interna do mundo.
           </p>
         </div>
         

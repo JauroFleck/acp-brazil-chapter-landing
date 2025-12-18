@@ -23,7 +23,7 @@ export default function Navigation() {
             <img 
               src={acpLogo} 
               alt="ACP Brasil Logo" 
-              className="h-12 w-auto"
+              className="h-20 w-auto"
             />
           </div>
 
